@@ -8,6 +8,23 @@
     <title>Job Opportunities</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+
+    <style>
+.sidebar-box {
+  max-height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar-box .read-more { 
+  position: absolute; 
+  bottom: 0; left: 0;
+  width: 100%; 
+  text-align: center; 
+  margin: 0; padding: 30px 0; 
+  
+}
+</style>
+
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -37,7 +54,8 @@
       <div class="row">
         <div class="col-lg-6">
           <h1>Job Opportunities at ECSMC</h1>
-          <p>Posted below are open opportunites currently open at ECSMC.</p>
+          <p>Posted below are open opportunites currently open at ECSMC.
+            <br>Click on the job titles for more information.</p>
         </div>
         <div class="col-lg-6">
 
@@ -48,7 +66,8 @@
       
       <div class="row">
         <div class="col-lg-12">
-          <h2>Chronic Disease Manager</h3>
+          <h2 class="open">Chronic Disease Manager</h3>
+            <div class="showpanel">
           <h3>Job Summary</h3>
             <p>Under direction of the Associate Executive Director this individual will be responsible for the general operation of the diabetes clinic and community health prevention programs and serve as a liaison between the county clinic and El Concilio. The individual hired will supervise and direct clinic and community staff in the performance of their duties, monitor progress and performance, data entry, record keeping and maintenance of program documents. In addition, assist in program development, planning and program reporting. Familiarity and experience with databases essential.</p>
           <h3>Typical Tasks</h3>
@@ -88,6 +107,7 @@
           </div>          
         </div>
       </div>
+    </div>
       
       <footer>
         <hr>
@@ -102,5 +122,28 @@
     
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+
+
+<script>
+$('.showpanel').hide();
+$(document).ready(function(){
+    $('.open').click(function(){
+        //var link = $(this);
+
+        $('.showpanel').slideToggle('slow', function() {
+            /*if ($(this).is(":visible")) {
+                 link.text('close');                
+            } else {
+                 link.text('open');                
+            }   */     
+        });
+            
+    });  
+
+});
+</script>
+
+
+
   </body>
 </html>
