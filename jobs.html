@@ -5,45 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Job Opportunities</title>
+    <title>Join Us!</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <style>
-      .sidebar-box {
-        max-height: 120px;
-        position: relative;
-        overflow: hidden;
-      }
-      .sidebar-box .read-more { 
-        position: absolute; 
-        bottom: 0; left: 0;
-        width: 100%; 
-        text-align: center; 
-        margin: 0; padding: 30px 0; 
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand logo-nav" href="index.html"><img src="http://i.imgur.com/LqsVLrH.jpg&text=Logo"></a>
         </div>
-
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="Calendar.html">Calendar</a></li>
-            <li><a href="links.html">Links</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li class="dropdown">
+              <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Mission & Vision</a></li>
+                <li><a href="#">Key Staff</a></li>
+                <li><a href="#">Board of Directors</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Health Access Services</a></li>
+                <li><a href="#">Environmental Services</a></li>
+                <li><a href="#">Safety Net Services</a></li>
+                <li><a href="#">Education Services</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Education</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="jobs.html">Join Us</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
